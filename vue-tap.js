@@ -34,7 +34,7 @@
     }
 
     function isTap(self) {
-        if (self.disabled : self.el.disabled) {
+        if (self.disabled || self.el.disabled) {
             return false
         }
         var tapObj = self.tapObj
