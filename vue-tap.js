@@ -82,7 +82,7 @@
         }
 
         var tagName = e.target.tagName.toLocaleLowerCase();
-        if(tagName === 'input' || tagName === 'textarea') {
+        if (!e.target.disabled && (tagName === 'input' || tagName === 'textarea')) {
           return e.target.focus();
         }
 
