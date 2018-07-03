@@ -60,7 +60,7 @@
 
         if (!isTap(self)) return
 
-        setTimeout(() => {
+        setTimeout(function() {
             self.handler(e)
         }, 50)
     }
